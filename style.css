@@ -1,0 +1,55 @@
+@keyframes slider  {
+    0% {
+        transform: scale(1)
+    } 50% {
+        transform: scale(0.8)
+    } 100% {
+        transform: scale(1)
+    }
+}
+body {
+    margin: 0;
+    background-color: #2d2d2d;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-family: monospace;
+}
+
+img {
+    height: 300px;
+    width: 533px;
+}
+.showArea{
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+    /* right: 533px; */
+}
+.hiddenArea {
+    width: 533px;
+    overflow: hidden;
+}
+
+.animation {
+    animation: slider 0.5s ease;
+}
+button {
+    font-size: 25px;
+    padding: 5px 15px;
+    background: linear-gradient(gold,deeppink);
+    font-family: monospace;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.mainWrapper {
+    width: 533px;
+    margin:auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.buttonWrapper {
+    background-color: rgba(0, 0, 0, 0.541);
+}
